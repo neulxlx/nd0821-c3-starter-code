@@ -1,8 +1,8 @@
 import json
 import requests
 
-# app_url = "https://udacity-course3-project.herokuapp.com/"
-app_url = "http://127.0.0.1:8000"
+app_url = "https://salary-prediction-h105.onrender.com"
+# app_url = "http://127.0.0.1:8000"
 
 # Test the GET method
 request_get = requests.get(app_url)
