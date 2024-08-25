@@ -41,7 +41,7 @@ X_test, y_test, encoder, lb = process_data(
 # Train and save a model.
 clf_model = train_model(X_train, y_train)
 
-with open('../model/classifier', "wb") as file:
+with open('../model/classifier.pkl', "wb") as file:
     pkl.dump([encoder, lb, clf_model], file)
 
 
