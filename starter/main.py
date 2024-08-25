@@ -5,6 +5,7 @@ from pydantic import BaseModel
 from starter.ml.data import process_data
 from starter.ml.model import inference
 import pandas as pd
+import os
 
 cat_features = [
     "workclass",
@@ -67,7 +68,9 @@ async def welcome():
 
 @app.post("/predict")
 async def predict(data: InputData):
-    with open("./starter/model/classifier.pkl", 'rb') as f:
+    file_dir = os.path.dirname(__file__)
+    model_path = os.path.join(file_dir, 'model/classifier.pkl')
+    with open(model_path, 'rb') as f:
         encoder, lb, model = pkl.load(f)
 
     df = pd.DataFrame(
