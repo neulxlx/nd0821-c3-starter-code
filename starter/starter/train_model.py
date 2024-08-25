@@ -11,6 +11,7 @@ import pickle as pkl
 
 from ml.data import process_data
 from ml.model import train_model, inference, compute_model_metrics
+from ml.model_slicing import slice_metrics
 # Add the necessary imports for the starter code.
 
 # Add code to load in the data.
@@ -52,3 +53,6 @@ precision, recall, fbeta = compute_model_metrics(y_test, test_preds)
 print(f"Precicion: {precision:.2f}")
 print(f"Recall: {recall:.2f}")
 print(f"F1: {fbeta:.2f}")
+
+metrics = slice_metrics(clf_model, encoder, lb, test, "salary", 
+            cat_features, "../model/slice_metrics.csv",)
