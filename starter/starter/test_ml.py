@@ -19,7 +19,8 @@ from starter.ml.model import train_model, inference, compute_model_metrics
 
 @pytest.fixture()
 def input_df():
-    df = pd.read_csv('../data/clean_census.csv')
+
+    df = pd.read_csv('./starter/data/clean_census.csv')
     train, test = train_test_split(df, test_size=0.2)
     return train, test
 
