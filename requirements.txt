@@ -5,6 +5,7 @@ pytest
 requests
 fastapi
 uvicorn
+httpx
 pytest
 flake8
 dvc[s3]
