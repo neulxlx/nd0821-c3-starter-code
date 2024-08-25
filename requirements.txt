@@ -1,0 +1,10 @@
+numpy
+pandas
+scikit-learn
+pytest
+requests
+fastapi
+uvicorn
+pytest
+flake8
+dvc[s3]
