@@ -1,4 +1,15 @@
-Working in a command line environment is recommended for ease of use with git and dvc. If on Windows, WSL1 or 2 is recommended.
+# Deploying a ML Model to Cloud Application Platform with FastAPI
+* Course: ML DevOps Engineer Nanodegree Udacity
+
+## Project description
+In this project, you will apply the skills acquired in this course to develop a classification model on publicly available Census Bureau data. You will create unit tests to monitor the model performance on various data slices. Then, you will deploy your model using the FastAPI package and create API tests. The slice validation and the API tests will be incorporated into a CI/CD framework using GitHub Actions.
+
+# Project Link 
+ <div>
+<a href="https://github.com/neulxlx/nd0821-c3-starter-code">
+  <img src="https://img.shields.io/badge/Github-white?logoGithub&logoColor=black&style=for-the-badge" />  
+</a>
+</div>
 
 # Environment Set up
 * Download and install conda if you don’t have it already.
